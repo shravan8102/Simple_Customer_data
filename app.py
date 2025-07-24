@@ -13,8 +13,10 @@ from sklearn.ensemble import RandomForestClassifier
 # Sample dataset
 
 # file_path = "C:\Users\PRATI\Desktop\Xplore Training\Python Introduce Overview\Day_17 - 24th_July\sample_customer_data.csv"  # Update with your actual file path
-
-df = pd.read_csv('sample_customer_data.csv')  # Must contain 'features' & 'target' columns
+url = "https://github.com/shravan8102/Simple_Customer_data/blob/main/sample_customer_data.csv"
+# df = pd.read_csv('sample_customer_data.csv') 
+df = pd.read_url(url)
+# Must contain 'features' & 'target' columns
 
 # print(df.head())
 
